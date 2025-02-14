@@ -1,4 +1,4 @@
-import Header from "@/component/Header";
+import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        {children}
+        <div className="max-w-7xl mx-auto">{children}</div>
       </body>
     </html>
   );
